@@ -25,5 +25,12 @@ $aModule = [
     'email'       => 'academy@oxid-esales.com',
     'extend'      => [],
     'blocks'      => [],
-    'settings'    => [],
+    'settings'    => [
+        [
+            "group" => "OXAC_BIRTHDAY_TEXT",
+            "name" => "sBirthdayTextStart",
+            "type" => "str",
+            "value" => "Happy Birthday",
+        ]
+    ],
 ];

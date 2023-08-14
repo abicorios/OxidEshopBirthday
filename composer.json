@@ -1,0 +1,22 @@
+{
+    "name": "abicorios/userbirthday",
+    "description": "generate birthday greetings when birthday",
+    "version": "1.0",
+    "type": "oxideshop-module",
+    "homepage": "https://www.oxid-esales.com",
+    "author": {
+        "name": "OXID Academy",
+        "email": "academy@oxid-esales.com",
+        "homepage": "https://www.oxid-esales.com"
+    },
+    "extra": {
+        "oxideshop": {
+            "target-directory": "abicorios/OxidEshopBirthday"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "abicorios\\OxidEshopBirthday\\": "../../../source/modules/abicorios/OxidEshopBirthday/"
+        }
+    }
+}

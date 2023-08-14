@@ -24,7 +24,14 @@ $aModule = [
     'url'         => 'https://www.oxid-esales.com/',
     'email'       => 'academy@oxid-esales.com',
     'extend'      => [],
-    'blocks'      => [],
+    'blocks'      => [
+        [
+            'template' => 'page/shop/start.tpl',
+            'block'    => 'start_welcome_text',
+            'file'     => 'views/blocks/start__start_welcome_text.tpl',
+            'position' => '1',
+        ]
+    ],
     'settings'    => [
         [
             'group' => 'OXAC_BIRTHDAY_TEXT',

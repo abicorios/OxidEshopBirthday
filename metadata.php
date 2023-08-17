@@ -24,8 +24,8 @@ $aModule = [
     'url'         => 'https://www.oxid-esales.com/',
     'email'       => 'academy@oxid-esales.com',
     'extend'      => [
-        \OxidEsales\EshopCommunity\Application\Model\User::class => \abicorios\OxidEshopBirthday\Model\User::class,
-        \OxidEsales\EshopCommunity\Application\Model\VoucherSerie::class => \abicorios\OxidEshopBirthday\Model\VoucherSerie::class,
+        \OxidEsales\Eshop\Application\Model\User::class => \abicorios\OxidEshopBirthday\Model\User::class,
+        \OxidEsales\Eshop\Application\Model\VoucherSerie::class => \abicorios\OxidEshopBirthday\Model\VoucherSerie::class,
     ],
     'blocks'      => [
         [

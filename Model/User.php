@@ -2,9 +2,11 @@
 
 namespace abicorios\OxidEshopBirthday\Model;
 
-// use OxidEsales\EshopCommunity\Application\Model\VoucherSerie;
-use abicorios\OxidEshopBirthday\Model\VoucherSerie;
+use OxidEsales\Eshop\Application\Model\VoucherSerie;
 
+/**
+ * @see \OxidEsales\Eshop\Application\Model\User
+ */
 class User extends User_parent
 {
     /**
@@ -28,7 +30,7 @@ class User extends User_parent
     {
         if ($this->hasBirthday()) {
             $voucherSerie = oxNew(VoucherSerie::class);
-            if ($voucherCode = $voucherSerie->generateVoucherForBirthday($this)) {
+            if ($voucherCode = $voucherSerie->getBirthdayVoucherCode($this)) {
                 return $voucherCode;
             }
         }

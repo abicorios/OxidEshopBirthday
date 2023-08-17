@@ -23,7 +23,9 @@ $aModule = [
     'author'      => 'Oxid Academy',
     'url'         => 'https://www.oxid-esales.com/',
     'email'       => 'academy@oxid-esales.com',
-    'extend'      => [],
+    'extend'      => [
+        \OxidEsales\Eshop\Application\Model\User::class => \abicorios\OxidEshopBirthday\Model\User::class,
+    ],
     'blocks'      => [
         [
             'template' => 'page/shop/start.tpl',

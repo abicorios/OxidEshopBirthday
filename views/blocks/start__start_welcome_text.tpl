@@ -2,11 +2,12 @@
 
 [{if $oxcmp_user}]
     [{if $oxcmp_user->hasBirthday()}]
-        [{assign var="conf" value=$oViewConf->getConfig()}]
+        [{assign var=voucherCode value=$oxcmp_user->getBirthdayVoucherCode()}]
+        [{assign var=conf value=$oViewConf->getConfig()}]
         [{$conf->getConfigParam('sBirthdayTextStart')}]
-    [{else}]
-        sorry - no birthday
+
+        [{if $voucherCode}]
+            [{oxmultilang ident='BIRTHDAY_WISHES' args=$voucherCode}]
+        [{/if}]
     [{/if}]
-[{else}]
-    you are not logged in
 [{/if}]

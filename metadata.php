@@ -26,6 +26,8 @@ $aModule = [
     'extend'      => [
         \OxidEsales\Eshop\Application\Model\User::class => \abicorios\OxidEshopBirthday\Model\User::class,
         \OxidEsales\Eshop\Application\Model\VoucherSerie::class => \abicorios\OxidEshopBirthday\Model\VoucherSerie::class,
+        \OxidEsales\Eshop\Application\Model\Basket::class => \abicorios\OxidEshopBirthday\Model\Basket::class,
+        \OxidEsales\Eshop\Application\Model\Voucher::class => \abicorios\OxidEshopBirthday\Model\Voucher::class,
     ],
     'blocks'      => [
         [
